@@ -7,12 +7,12 @@
     <h4>User Profile</h4>
   <%= form_with(model: current_user) do |u| %>
   <div class="user_name">
-        <h4><%= u.object.username %></h4>
+    <h4><%= u.object.username %></h4>
   </div>
   <% end %>
-  <%= current_user.points %><br>
+  <h4>Karma Points</h4><h4><%= current_user.points %></h4>
+  
   <h4>Badges</h4>
-
   <% first_pin.each do | badge |%>
   <ul><span><%= badge %></span></ul>
   <% end %>
