@@ -1,5 +1,6 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
 </head>
 <body id="user_background">
   <center>
@@ -11,10 +12,12 @@
   </div>
   <% end %>
   <h4>Karma Points</h4><h4><%= current_user.points %></h4>
-  <h4>Badges</h4>
-  <% first_pin.each do | badge |%>
-  <ul><span><%= badge %></span></ul>
+    <h4>Achievements</h4>
+<div class="achievements">
+    <% first_pin.each do | badge |%>
+    <ul><span><%= badge %></span></ul>
   <% end %>
+</div>
   <%= link_to "Start Spotting", spots_path, class:'btn btn-primary btn-lg'  %>
   <%= link_to 'Logout', '/logout', class:'btn btn-primary btn-lg'  %>
 </center>
