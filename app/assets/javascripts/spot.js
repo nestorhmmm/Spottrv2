@@ -3,7 +3,8 @@ var latitude, longitude, map, identifier, trackMe, myLatLng, markers, i, mkrs, i
 markers = []
 function initMap() {
   var isOpen,
-  marker;
+      marker;
+      
   if (trackMe===true){
     identifier=window.navigator.geolocation.watchPosition(function(position) {
       latitude = position.coords.latitude;
