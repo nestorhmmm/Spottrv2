@@ -3,8 +3,7 @@ var latitude, longitude, map, identifier, trackMe, myLatLng, markers, i, mkrs, i
 markers = []
 function initMap() {
   var isOpen,
-      marker;
-      
+  marker;
   if (trackMe===true){
     identifier=window.navigator.geolocation.watchPosition(function(position) {
       latitude = position.coords.latitude;
@@ -22,7 +21,7 @@ function initMap() {
           marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            icon: 'https://d2poexpdc5y9vj.cloudfront.net/themes/3.0/img/icon-car.png'
+            icon: 'http://youtubelive.soraweb.net/image/close.png'
           });
           infoWindow = new google.maps.InfoWindow({
             content: markerDescription
@@ -33,7 +32,6 @@ function initMap() {
           marker = new google.maps.Marker({
             position: myLatLng,
             map: map
-            icon:'http://youtubelive.soraweb.net/image/close.png'
           });
         }
       }
