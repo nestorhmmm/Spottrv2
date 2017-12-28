@@ -21,7 +21,7 @@ function initMap() {
           marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+            icon: 'https://d2poexpdc5y9vj.cloudfront.net/themes/3.0/img/icon-car.png'
           });
           infoWindow = new google.maps.InfoWindow({
             content: markerDescription
@@ -32,6 +32,7 @@ function initMap() {
           marker = new google.maps.Marker({
             position: myLatLng,
             map: map
+            icon:'http://youtubelive.soraweb.net/image/close.png'
           });
         }
       }
@@ -107,7 +108,7 @@ window.onload = function (){
               marker = new google.maps.Marker({
                 position: spotLatLng,
                 map: map,
-                icon: 'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png'
+                icon: 'https://d2poexpdc5y9vj.cloudfront.net/themes/3.0/img/icon-car.png'
               });
 
               setTimeout(function(){
