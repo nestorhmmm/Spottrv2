@@ -10,7 +10,7 @@ function initMap() {
       longitude = position.coords.longitude;
       map = new google.maps.Map(document.getElementById('map'), {
         center: {lat: latitude, lng: longitude},
-        zoom: 15
+        zoom: 17
       });
       mkrs = gon.spots
       for (i = 0; i < mkrs.length; i++){
@@ -21,7 +21,7 @@ function initMap() {
           marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
-            icon: 'http://youtubelive.soraweb.net/image/close.png'
+            icon: 'https://d2poexpdc5y9vj.cloudfront.net/themes/3.0/img/icon-car.png'
           });
           infoWindow = new google.maps.InfoWindow({
             content: markerDescription
@@ -31,7 +31,8 @@ function initMap() {
         else {
           marker = new google.maps.Marker({
             position: myLatLng,
-            map: map
+            map: map,
+            icon: 'http://youtubelive.soraweb.net/image/close.png'
           });
         }
       }
